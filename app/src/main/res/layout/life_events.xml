@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lifeEventsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/location_image"
+        android:layout_marginStart="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/lifeEventsTitle">
+
+        <TextView
+            android:id="@+id/EventLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Salt lake city"/>
+
+        <TextView
+            android:id="@+id/EventPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Kyle Gwilliam" />
+
+    </LinearLayout>
+
+</RelativeLayout>
